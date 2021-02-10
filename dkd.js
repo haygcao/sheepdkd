@@ -46,21 +46,22 @@ hostname = dkd-api.dysdk.com
 */
 const $ = new Env('多看点');
 const openurl = { "open-url" : "dysdk://" }
-let dkdurl = $.getdata('dkdurl')
-let dkdhd = $.getdata('dkdhd')
-let dkdbody = $.getdata('dkdbody')
-let dkdtxurl = $.getdata('dkdtxurl')
-let dkdtxhd = $.getdata('dkdtxhd')
-let dkdtxbody = $.getdata('dkdtxbody')
+//let dkdurl = $.getdata('dkdurl')
+//let dkdhd = $.getdata('dkdhd')
+//let dkdbody = $.getdata('dkdbody')
+//let dkdtxurl = $.getdata('dkdtxurl')
+//let dkdtxhd = $.getdata('dkdtxhd')
+//let = dkdtxbody = $.getdata('dkdtxbody')
 
-if ($.isNode()) {
-      dkdurl = process.env.DKDURL;
-      dkdhd = process.env.DKDHD;
-      dkdbody = process.env.DKDBODY;
-      dkdtxurl = process.env.DKDTXURL;
-      dkdtxhd = process.env.DKDTXHD;
-      dkdtxbody = process.env.DKDTXBODY;
+let dkdurl = process.env.DKDURL;
+let dkdhd = process.env.DKDHD;
+let dkdbody = process.env.DKDBODY;
+let dkdtxurl = process.env.DKDTXURL;
+let dkdtxhd = process.env.DKDTXHD;
+let dkdtxbody = process.env.DKDTXBODY;
       
+if ($.isNode()) {
+      console.log(`============ 脚本执行-国际标准时间(UTC)：${new Date().toLocaleString()}  =============\n`)
       console.log(`============ 脚本执行-北京时间(UTC+8)：${new Date(new Date().getTime() + 8 * 60 * 60 * 1000).toLocaleString()}  =============\n`)
 }
 
