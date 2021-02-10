@@ -29,5 +29,6 @@ jobs:
         run: |
           node bbb.js
         env:
+          BBBCK: ${{ secrets.BBBCK }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
