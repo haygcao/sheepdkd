@@ -29,11 +29,11 @@ jobs:
         run: |
           node dkd2.js
         env:
-           DKDURL: ${{ secrets.DKDURL2 }}
-           DKDHD: ${{ secrets.DKDHD2 }}
-           DKDBODY: ${{ secrets.DKDBODY2 }}
-           DKDTXURL: ${{ secrets.DKDTXURL2 }}
-           DKDTXHD: ${{ secrets.DKDTXHD2 }}
-           DKDTXBODY: ${{ secrets.DKDTXBODY2 }}
+           DKDURL2: ${{ secrets.DKDURL2 }}
+           DKDHD2: ${{ secrets.DKDHD2 }}
+           DKDBODY2: ${{ secrets.DKDBODY2 }}
+           DKDTXURL2: ${{ secrets.DKDTXURL2 }}
+           DKDTXHD2: ${{ secrets.DKDTXHD2 }}
+           DKDTXBODY2: ${{ secrets.DKDTXBODY2 }}
            TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
            TG_USER_ID: ${{ secrets.TG_USER_ID }}
