@@ -72,6 +72,11 @@ let ymzbody = process.env.ymzbody
 let ymzbody1 = process.env.ymzbody1
 let ymztxbody = process.env.ymztxbody
 
+if ($.isNode()) {
+      console.log(`============ 脚本执行-国际标准时间(UTC)：${new Date().toLocaleString()}  =============\n`)
+      console.log(`============ 脚本执行-北京时间(UTC+8)：${new Date(new Date().getTime() + 8 * 60 * 60 * 1000).toLocaleString()}  =============\n`)
+}
+
 !(async () => {
   if (typeof $request !== "undefined") {
     await ymzck()
