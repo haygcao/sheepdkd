@@ -60,11 +60,18 @@ hostname = ymz.iphonezhuan.com
 
 */
 const $ = new Env('羊毛赚');
-let ymzurl = $.getdata('ymzurl')
-let ymzhd = $.getdata('ymzhd')
-let ymzbody = $.getdata('ymzbody')
-let ymzbody1 = $.getdata('ymzbody1')
-let ymztxbody = $.getdata('ymztxbody')
+//let ymzurl = $.getdata('ymzurl')
+//let ymzhd = $.getdata('ymzhd')
+//let ymzbody = $.getdata('ymzbody')
+//let ymzbody1 = $.getdata('ymzbody1')
+//let ymztxbody = $.getdata('ymztxbody')
+
+let ymzurl = process.env.ymzurl
+let ymzhd = process.env.ymzhd
+let ymzbody = process.env.ymzbody
+let ymzbody1 = process.env.ymzbody1
+let ymztxbody = process.env.ymztxbody
+
 !(async () => {
   if (typeof $request !== "undefined") {
     await ymzck()
