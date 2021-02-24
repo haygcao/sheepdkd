@@ -29,7 +29,7 @@ jobs:
       - name: '运行 【羊毛赚2】'
         if: env.YMZ_HD2
         run: |
-          node ymz.js
+          node ymz2.js
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
