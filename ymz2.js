@@ -79,20 +79,20 @@ if ($.isNode()) {
   } else {
    ymzurl = process.env.YMZ_URLL.split()
   }; */
-if (process.env.YMZ_HD && process.env.YMZ_HD2.split('\n').length > 0) {
-   ymzhd = process.env.YMZ_HD.split('\n');
+if (process.env.YMZ_HD2 && process.env.YMZ_HD2.split('\n').length > 0) {
+   ymzhd = process.env.YMZ_HD2.split('\n');
   } else  {
-   ymzhd = process.env.YMZ_HD.split()
+   ymzhd = process.env.YMZ_HD2.split()
   };
-if (process.env.YMZ_BODY && process.env.YMZ_BODY2.split('\n').length > 0) {
-   ymzbody = process.env.YMZ_BODY.split('\n');
+if (process.env.YMZ_BODY2 && process.env.YMZ_BODY2.split('\n').length > 0) {
+   ymzbody = process.env.YMZ_BODY2.split('\n');
   } else  {
-   ymzbody = process.env.YMZ_BODY.split()
+   ymzbody = process.env.YMZ_BODY2.split()
   };  
-if (process.env.YMZ_BODY1 && process.env.YMZ_BODY12.split('\n').length > 0) {
-   ymzbody1 = process.env.YMZ_BODY1.split('\n');
+if (process.env.YMZ_BODY12 && process.env.YMZ_BODY12.split('\n').length > 0) {
+   ymzbody1 = process.env.YMZ_BODY12.split('\n');
   } else  {
-   ymzbody1 = process.env.YMZ_BODY1.split()
+   ymzbody1 = process.env.YMZ_BODY12.split()
   };  
 //video
 /*  Object.keys(ymzurl).forEach((item) => {
